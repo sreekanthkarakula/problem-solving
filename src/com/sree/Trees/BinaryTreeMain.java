@@ -2,6 +2,12 @@ package com.sree.Trees;
 
 public class BinaryTreeMain {
 
+	/*
+	 * The aim of this problem is to print the path to a node and get the parent of 
+	 * the node in a binary tree. The puzzle is if there are millions of requests for 
+	 * this then we need to optimize the printpath() and get parent() functionalities..
+	 */
+	
 	
 	public static void main(String args[]){
 		
