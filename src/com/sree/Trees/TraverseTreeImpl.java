@@ -27,6 +27,12 @@ public class TraverseTreeImpl implements TraverseTree{
 		return null;
 	}
 
+	/*
+	 * (non-Javadoc)
+	 * @see com.sree.Trees.TraverseTree#printPath(com.sree.Trees.Node)
+	 * printing path from inorder and preorder paths.
+	 */
+	
 	@Override
 	public void printPath(Node ref) {
 		
