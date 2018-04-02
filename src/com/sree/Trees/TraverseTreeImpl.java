@@ -30,7 +30,7 @@ public class TraverseTreeImpl implements TraverseTree{
 	/*
 	 * (non-Javadoc)
 	 * @see com.sree.Trees.TraverseTree#printPath(com.sree.Trees.Node)
-	 * printing path from inorder and preorder paths.
+	 * printing path from inorder and preorder paths instead of traversing the  binary tree.
 	 */
 	
 	@Override
