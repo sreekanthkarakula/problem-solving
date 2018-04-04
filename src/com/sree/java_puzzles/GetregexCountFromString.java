@@ -6,34 +6,32 @@ public class GetregexCountFromString {
 
 	public static void main(String args[]){
 		
-		String giveninput = "abcdfdxyxghdfdfdiopdfd";
+		String giveninput = "abcdfdxyxghdfdfdfdiopdfd";
 		
 		//get the count of "dfd" in the above string the count should be 4
 		// abc dfd xyxgh dfdfd(count as 2) iop dfd
 		String regex = "dfd";
 		
-		String newinput = giveninput;
+		int count=0;
 		
-		int length = newinput.length();
 		
-		while(true){
+		while ( giveninput.length() >=3) {
 			
-			//get the index of next d in the string and check the substring between d index and next 2 chars
+			int index = giveninput.indexOf('d');
 			
-			int indexofd = newinput.indexOf("d");
+			giveninput = giveninput.substring(index);
 			
-			int endindex = indexofd+2;
 			
-			if(endindex<length){
-				
-				newinput.substring(indexofd, endindex).equals(regex);
-				
-				
+			if(giveninput.substring(0, 3).equals("dfd")) {
+				count++;
 			}
 			
+			giveninput = giveninput.substring(1);
+						
+			System.out.println("string changed to"+ giveninput);
 			
 		}
 		
-		
+		System.out.println(count);
 	}
 }
