@@ -19,16 +19,14 @@ public class CountChars {
 		while(index<length) {
 			
 			if(index == 0) {
-				
 				count++;
 			    check = input.charAt(0);
 				index++;
 			
 			}
 		    if(check == input.charAt(index)) {
-				
 				count++;
-			    check = input.charAt(index);
+				check = input.charAt(index);
 				index++;
 			}
 			
@@ -39,6 +37,8 @@ public class CountChars {
 				count=1;
 				index++;
 			}
+		    
+		    System.out.println("index is " + index);
 			
 		}
 		
